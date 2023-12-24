@@ -8,7 +8,6 @@ public class Checkout {
     		private static String CashierName;
 		private static double discount;
    		private static double amountPaid;
-
     private static ArrayList<String> itemList = new ArrayList<>();
     private static ArrayList<Integer> quantiyList = new ArrayList<>();
     private static ArrayList<Double> priceList = new ArrayList<>();
@@ -55,7 +54,11 @@ public class Checkout {
 	 	System.out.println();
 		discount = input.nextInt();
 	 	System.out.println();
-		
+
+		for(int index=0; index < itemList.size(); index++){
+		totalList.add(quantiyList.get(index) * priceList.get(index));
+		}
+
 		getDisplayAll();
 		getDisplayAllWithPayment();
 
@@ -105,8 +108,6 @@ public class Checkout {
     System.out.println("--------------------------------------------------------------");
 
     for (int count = 0; count < itemList.size(); count++) {
-        totalList.add(quantiyList.get(count) * priceList.get(count));
-
         System.out.printf("%10s%10s%15s%15s", itemList.get(count), quantiyList.get(count),
                 priceList.get(count), quantiyList.get(count) * priceList.get(count));
 
