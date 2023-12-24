@@ -9,14 +9,12 @@ import java.util.Arrays;
 
 
 		int[] array;
-		array = new int[4];	
+		array = new int[3];	
 		int largest_Num = 0;
 
 		
 			for(int collect = 0; collect < array.length; collect++){
 			array[collect] = input.nextInt(); 
-				
-		
 				if (array[collect] > largest_Num ){
 					largest_Num = array[collect];
 				}

@@ -15,11 +15,12 @@ import java.util.Arrays;
 			}
 
 		
-	System.out.println(" Enter Another Element So As To Complete A Check ");
-			int compared_Variables = input.nextInt();
-			int array_Index = 0;
+		}
 
-		for(int collect = 0; collect < array.length; collect++){
+
+		public static void checkElement(int[] array, int compared_Variables){
+			int array_Index = 0;
+			for(int collect = 0; collect < array.length; collect++){
 			if(array[collect] == compared_Variables){
 			array_Index = collect;
 			break;
@@ -32,6 +33,6 @@ import java.util.Arrays;
             System.out.println("The Number Entered Is Not Present In the Array Index " );
 			}
 
-	}
+		}
 
 }
