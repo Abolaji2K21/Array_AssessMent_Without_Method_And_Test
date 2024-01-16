@@ -18,7 +18,7 @@ public class Checkout {
 
 
 
-    public static void main(String args[]) {
+    public static void main(String... bj) {
 	      	System.out.print("What Is The Customer's Name : " );
 		fullName = input.nextLine();	
 	 	System.out.println();
@@ -211,7 +211,7 @@ public class Checkout {
    }
 
    private static double getBalance(){
-	return amountPaid - getBillTotal();
+	return (amountPaid - getBillTotal());
    } 
    
    public static void getDisplayForAfterPayment_s(){

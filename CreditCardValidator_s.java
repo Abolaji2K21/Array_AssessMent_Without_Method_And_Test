@@ -60,26 +60,7 @@ public class CreditCardValidator_s{
         return cardDetails;
     }
 
-     public static boolean validateCard(String cardNumber) {
-        int sum = 0;
-        boolean calculate = false;
-
-        for (int count = cardNumber.length() - 1; count >= 0; count--) {
-            int digit = Character.getNumericValue(cardNumber.charAt(count));
-
-            if (calculate) {
-                digit = digit + digit;
-                if (digit > 9) {
-                    digit = digit - 9;
-                }
-            }
-
-            sum += digit;
-            calculate = !calculate;
-        }
-
-        return sum % 10 == 0;
-    }
+ 
 
     public static String getCardType(String cardNumber) {
         if (cardNumber.startsWith("4")) {
