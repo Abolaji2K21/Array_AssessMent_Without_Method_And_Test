@@ -6,8 +6,8 @@ public class MBTIPersonalityTest {
     private static Scanner input = new Scanner(System.in);
     private static String fullName;
     private static int countA;
-    private static int countB
-;
+    private static int countB;
+
     private static char[] arrayEvsIResponses = new char[10];
     private static char[] arraySvsNResponses = new char[10];
     private static char[] arrayTvsFResponses = new char[10];

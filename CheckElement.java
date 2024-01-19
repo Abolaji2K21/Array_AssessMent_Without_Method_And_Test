@@ -14,21 +14,25 @@ import java.util.Arrays;
 				array[collect] = input.nextInt();
 			}
 
-		
+        	System.out.print("Enter the number to check in the array: ");
+        	int compared_Variables = input.nextInt();
+
+
+		checkElement(array,compared_Variables);
 		}
 
 
 		public static void checkElement(int[] array, int compared_Variables){
-			int array_Index = 0;
-			for(int collect = 0; collect < array.length; collect++){
+			int collect;
+
+			for(collect = 0; collect < array.length; collect++){
 			if(array[collect] == compared_Variables){
-			array_Index = collect;
 			break;
 			}
 		}
 
-			if (array_Index != 0){
-            System.out.println("The Number Entered Is Present In the Array Index " + array_Index );
+			if (collect < array.length){
+            System.out.println("The Number Entered Is Present In the Array Index " + collect );
 			} else {
             System.out.println("The Number Entered Is Not Present In the Array Index " );
 			}

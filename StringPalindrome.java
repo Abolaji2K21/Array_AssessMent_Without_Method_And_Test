@@ -12,9 +12,11 @@ import java.util.Arrays;
 			array = new String[1];
 			String reverse = "";
 
-			for(int collect = array[0].length() - 1; collect>= 0; collect--){
-			array[collect]= input.next();
-            		reverse = reverse + array[0].charAt(collect);
+      			String userInput = input.next().toLowerCase();
+
+        		for (int collect = userInput.length() - 1; collect >= 0; collect--) {
+            			array[0] = userInput.charAt(collect);
+           			 reverse = reverse + array[0];
 
 			 
 			}
